@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="noticia.css">
+    <title>Noticia</title>
+</head>
+<body>
+    <header>
+        <h1>Noticia do android</h1>
+        <p>Android é um sistema operacional móvel que roda sobre o núcleo Linux, embora por enquanto seja ainda desenvolvido numa estrutura externa ao núcleo Linux. Foi inicialmente desenvolvido pelo Google e posteriormente pela Open Handset Alliance, mas a Google é a responsável pela gerência do produto e engenharia de processos. O Android permite aos desenvolvedores escreverem software na linguagem de programação Java controlando o dispositivo via bibliotecas desenvolvidas pela Google.
+        </p>
+    </header>
+
+    <nav>
+        <a href="index.html" >Home</a>
+        <a href="noticia.html">Noticia</a>
+        <a href="Curiosidades.html" >Curiosidades</a>
+        <a href="fale.html" target="_blank">Fale conosco</a>
+    </nav>
+    
+    <figure>
+        <source media="(max-width:800px: )" srcset="https://www.oficinadanet.com.br/imagens/post/40295/750xNxchamada-android-13.jpg.pagespeed.ic.89ce96c02d.jpg">
+        <img src="https://www.oficinadanet.com.br/imagens/post/40295/750xNxchamada-android-13.jpg.pagespeed.ic.89ce96c02d.jpg" alt="">
+    </figure>
+    <main>
+        <p>O <strong>Android</strong> 13 contará com um recurso para acelerar sua internet. Sempre há imprevistos que ocorrem na recepção do sinal Wi-Fi, pensando nisso os desenvolvedores tentaram antecipar as reações a esses problemas através de simulações de situações na rede sem fio. Na versão 13 do Android haverá uma nova ferramenta para que o usuário aumente a performance e, consequentemente, a velocidade de acesso à internet.
+
+         Recentemente o Google implementou um novo código nas APIs de conectividade do Android 13 que permite a limitação da largura de banda. Analisando o novo código, o blog esper diz que a 13ª versão do Android irá suportar a regulagem de taxa de download e upload de acordo com a velocidade de conexão contratada. Haverá um limite em bytes por segundo e será salvo no valor Settings.Global 'ingress_rate_limit_bytes_per_second'.
+                
+        Na prática, se o usuário quiser limitar a velocidade a 1 Mbps para obter uma estabilidade maior, o valor de 'ingress_rate_limit_bytes_per_second' será '125000'. Se a função for desabilitada, haverá um valor 0. Como o limite de taxa de transmissão é aplicada por rede, um dispositivo conectado a várias redes simultaneamente por exceder o limite.</p>               
+
+         <h2>Compatibilidade</h2>      
+         <p>A API de limitação de taxa de largura de banda no Android 13 não será compatível com qualquer dispositivo. O kernel deverá suportar o recurso e pode ser feito compilando o Linux com as seguintes opções de configuração: CONFIG_NET_SCHED, CONFIG_NET_SCH_INGRESS, CONFIG_NET_CLS_MATCHALL, CONFIG_NET_CLS_ACT, CONFIG_NET_ACT_POLICE e CONFIG_NET_ACT_BPF. O valor de configuração 'config_ingress_rate_limiting_supported' de ServiceConnectivityResources deverá ser definido como 'true' (através de uma sobreposição de recursos de tempo de execução).</p>
+
+         <h2>Lançamento e disponibilidade</h2>
+
+        <p>Infelizmente, embora a segunda versão de preview (visualização) para desenvolvedores do Android 13 possua as novas APIs de limitação de largura de banda, atualmente não há uma forma para o usuário comum definir um limite de taxa. Acredita-se que esse recurso esteja disponível na primeira versão beta do Android 13 que será disponibilizada em abril de 2022.</p>
+        
+    </main>
+
+    <footer>
+        <p>Site criando  por Felipe</p>
+    </footer>
+</body>
+</html>
